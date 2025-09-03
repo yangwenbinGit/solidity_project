@@ -51,7 +51,7 @@ contract childContract is SimpleStorage{
         // f4();
 
         // 通过 this 调用 external
-        this.f4();
+        return this.f4();
        
     }
 }

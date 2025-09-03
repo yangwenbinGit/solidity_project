@@ -10,7 +10,7 @@ contract Primitives {
    // 无符号的整数类型的定义 
     uint8 public u8 = 10;
     uint256 public u256 = 456;
-    uint public udefault = 8;
+    uint16 public udefault = 8;
 
     // 可以带符号的
     int8 public i8 = -10;

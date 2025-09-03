@@ -3,10 +3,11 @@ pragma solidity ^0.8.30;
 
 contract Variables {
     
+    // 全局变量
     string public text = "Hello";
     uint public number  = 123;
 
-    function doSomething() public view {
+    function doSomething() public view   {
         // uint i =  456;
 
         // uint timestamp = block.timestamp;

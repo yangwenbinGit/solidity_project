@@ -9,9 +9,12 @@ contract Immutable {
 
     uint public immutable UINT_VALUE;
 
+    uint64 public immutable UINT64_VALUE;
+
     constructor(){
         ADDRESS_VALUE = msg.sender;
         UINT_VALUE = 50900;
+        UINT64_VALUE = 1000000000;
     }
 
 

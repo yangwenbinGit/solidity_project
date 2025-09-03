@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.30;
 
+// 常量 不可被更改
 contract  Constants {
 
     // constant表示是一个常量 不能被更改和赋值的 一般用于常量
@@ -10,5 +11,6 @@ contract  Constants {
     address public owner1 = msg.sender;
 
 
+    // 常量一般大写
     uint public constant MAX_SUPPLY = 10000;      // 1000000 tokens
 }

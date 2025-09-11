@@ -50,7 +50,11 @@ contract Bar {
         } catch Error(string memory reason) {
             // catch failing revert() and require()
             emit Log(reason);
-        } catch (bytes memory reason) {
+        }catch Panic(uint errorCode) {
+            // 捕获 assert(), arithmetic overflow 等
+            //  emit Log(errorCode);
+             assert(errorCode == 0);
+        }catch (bytes memory reason) {
             // catch failing assert()
             emit LogBytes(reason);
         }
